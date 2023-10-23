@@ -30,31 +30,28 @@ export default function Footer() {
       </span>
       <ul className={styles.filters}>
         <li>
-          <a
-            href="#/all"
+          <button
             className={`${filter === 'all' ? styles.selected : ''}`}
             onClick={() => dispatch(setFilter('all'))}
           >
             All
-          </a>
+          </button>
         </li>
         <li>
-          <a
-            href="#/active"
+          <button
             className={`${filter === 'active' ? styles.selected : ''}`}
             onClick={() => dispatch(setFilter('active'))}
           >
             Active
-          </a>
+          </button>
         </li>
         <li>
-          <a
-            href="#/completed"
+          <button
             className={`${filter === 'completed' ? styles.selected : ''}`}
             onClick={() => dispatch(setFilter('completed'))}
           >
             Completed
-          </a>
+          </button>
         </li>
       </ul>
       {completed ? (
